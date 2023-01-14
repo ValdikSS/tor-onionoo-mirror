@@ -1,0 +1,28 @@
+name: Mirror Tor onionoo data
+
+on:
+  schedule:
+    - cron: '27 */12 * * *'
+  workflow_dispatch:
+
+jobs:
+  onionoo:
+    name: Mirror Tor onionoo data
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Update onionoo data
+        run: |
+          curl -f --max-time 60 --compressed -o "details-full.json" "https://onionoo.torproject.org/details"
+          curl -f --max-time 60 --compressed -o "details-running-relays-fingerprint-address-only.json" \
+          'https://onionoo.torproject.org/details?type=relay&running=true&fields=fingerprint,or_addresses'
+
+      - name: Commit report
+        run: |
+          git config --global user.name 'Github Actions'
+          git config --global user.email 'none@users.noreply.github.com'
+          git add details-full.json details-running-relays-fingerprint-address-only.json
+          git commit -m "Onionoo update"
+          git push
