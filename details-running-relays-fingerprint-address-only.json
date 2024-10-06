@@ -2234,6 +2234,7 @@
 {"fingerprint":"46B983D4BEE89FAE87AAE4F0390F8CF086A86515","or_addresses":["85.10.205.59:12005","[2a01:4f8:a0:4048::2]:12005"],"country":"de"},
 {"fingerprint":"46BACCCE4BC3CAA63D2FE770DA2AE3CF401B9CF0","or_addresses":["195.201.62.78:9001","[2a01:4f8:13b:3e8:195:201:62:78]:9001"],"country":"de"},
 {"fingerprint":"46BFF98FBD77441B28A345DFCF0F11F70EB4A4B9","or_addresses":["45.80.158.27:8430"],"country":"pl"},
+{"fingerprint":"46D0DA6C293F13BFFAC1D2F8AE792CCB09B3C15D","or_addresses":["109.230.238.151:4000"],"country":"de"},
 {"fingerprint":"46D304AFE2DEBBA62526424D9DFEB1B61C78F1B4","or_addresses":["141.147.18.118:9019","[2603:c020:8006:4801:1:5::]:9019"],"country":"se"},
 {"fingerprint":"46DB04323499DD535956531DF2BF7B03EB2AB15D","or_addresses":["46.4.103.29:9001","[2a01:4f8:140:94d6::2]:9001"],"country":"de"},
 {"fingerprint":"46E0487EEEFD694CE625CC6E12D032395C01DB82","or_addresses":["94.142.241.43:22"],"country":"nl"},
@@ -8149,6 +8150,6 @@
 {"fingerprint":"FFFCADC30C0BFBA6396D5E1AA2ABE23E1BAA6DC1","or_addresses":["23.129.64.149:443","[2620:18c:0:192::149]:443"],"country":"us"},
 {"fingerprint":"FFFD39A71352286FCA36F4433175B94FC01A1A44","or_addresses":["130.61.30.37:853"],"country":"us"}
 ],
-"bridges_published":"2024-10-05 08:47:24",
+"bridges_published":"2024-10-05 19:47:25",
 "bridges":[
 ]}
