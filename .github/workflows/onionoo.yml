@@ -18,6 +18,7 @@ jobs:
           curl -f --max-time 60 --compressed -o "details-full.json" "https://onionoo.torproject.org/details"
           curl -f --max-time 60 --compressed -o "details-running-relays-fingerprint-address-only.json" \
           'https://onionoo.torproject.org/details?type=relay&running=true&fields=fingerprint,or_addresses,country'
+          python3 strip-family.py
 
       - name: Commit report
         run: |
