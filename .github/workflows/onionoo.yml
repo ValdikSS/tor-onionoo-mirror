@@ -15,8 +15,8 @@ jobs:
 
       - name: Update onionoo data
         run: |
-          curl -f --max-time 180 --compressed -o "details-full.json" "https://onionoo.torproject.org/details"
-          curl -f --max-time 180 --compressed -o "details-running-relays-fingerprint-address-only.json" \
+          curl -f --max-time 360 --compressed -o "details-full.json" "https://onionoo.torproject.org/details"
+          curl -f --max-time 360 --compressed -o "details-running-relays-fingerprint-address-only.json" \
           'https://onionoo.torproject.org/details?type=relay&running=true&fields=fingerprint,or_addresses,country'
           python3 strip-family.py
 
